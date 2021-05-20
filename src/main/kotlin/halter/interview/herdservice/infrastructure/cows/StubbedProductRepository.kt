@@ -1,12 +1,8 @@
-package halter.interview.herdservice.domain.cows;
+package halter.interview.herdservice.infrastructure.cows
 
-interface CowRepository {
-    fun find(cow: Cow): Cow
-    fun exists(cow: Cow): Boolean
-    fun save(product: Cow)
-}
+import halter.interview.herdservice.domain.cows.Cow
 
-class StubbedProductRepository : CowRepository {
+class StubbedProductRepository : ICowRepository {
     private val cows = mutableMapOf<String, Cow>()
 
     override fun find(cow: Cow): Cow {
@@ -19,9 +15,5 @@ class StubbedProductRepository : CowRepository {
 
     override fun save(cow: Cow) {
         cows[cow.collarId] = cow
-    }
-
-    fun clear() {
-        cows.clear()
     }
 }

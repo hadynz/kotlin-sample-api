@@ -8,5 +8,5 @@ class CowDto(
     val collarId: String,
     val cowNumber: String,
     val collarStatus: String,
-    //val lastLocation: GeoLocation
+    val lastLocation: GeoLocation
 )

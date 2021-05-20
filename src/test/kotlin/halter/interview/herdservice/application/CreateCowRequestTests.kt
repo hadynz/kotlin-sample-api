@@ -1,6 +1,6 @@
 package halter.interview.herdservice.application
 
-import halter.interview.herdservice.httpapi.routes.CreateCowRequest
+import halter.interview.herdservice.application.cows.createCow.CreateCowRequest
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
