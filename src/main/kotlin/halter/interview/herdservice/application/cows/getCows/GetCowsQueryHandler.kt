@@ -13,7 +13,7 @@ class GetCowsQueryHandler {
             id = cow.id,
             collarId = cow.collarId,
             cowNumber = cow.cowNumber,
-            collarStatus = cow.collarStatus.toString()
+            collarStatus = "Healthy"
         )
     }
 }
